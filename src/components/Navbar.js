@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import './Navbar.css'; // Assuming you have a separate CSS file for styling
+import './Navbar.css'; 
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">Lubanziy</Link>
+      <Link to="/">
+          <img src={logo} alt="Logo" className="logo-image" />
+        </Link>
       </div>
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <ul>

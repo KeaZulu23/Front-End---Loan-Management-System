@@ -1,11 +1,17 @@
 /* src/components/Navbar.css */
 
+/* Style for the logo image */
+.logo-image {
+  width: 120px;  /* Adjust size as needed */
+  height: auto;
+}
+
 /* Navbar Container */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #219b00;
+    background-color: #F6F7E9; 
     padding: 10px 20px;
     color: white;
   }
@@ -36,7 +42,7 @@
   }
   
   .nav-links ul li a {
-    color: white;
+    color: rgb(82, 51, 51);
     text-decoration: none;
     font-size: 1rem;
   }
@@ -67,7 +73,7 @@
       top: 60px;
       right: 0;
       width: 100%;
-      background-color: #219b00;
+      background-color: #447C57;
       flex-direction: column;
       justify-content: center;
       align-items: center;
